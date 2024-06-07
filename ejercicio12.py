@@ -25,7 +25,7 @@ def ejercicio12(a,b):
         for i in ( str(a) + str(b) ):
             suma += int(i)
         print(suma)
-    if str(dif)[-1] == 4: # o getdigits(dif, len(str(dif))) == 4
+    if str(dif)[-1] == '4': # o getdigits(dif, len(str(dif))) == 4
         showdigits(dif)
     if dif < 10 and primo(dif):
         print(a*b)
