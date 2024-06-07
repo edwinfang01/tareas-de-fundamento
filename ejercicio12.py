@@ -1,14 +1,14 @@
-def getdigits(a, b):
+def getdigits(a, b): #no hay que usar funcion getdigits en python
     num = str(a)
     return int(num[b-1:b])
 
 def showdigits(a):
     txt = ''
     a = str(a)
-    for i in range(1, len(a)+1):
-        if i > 1:
+    for i in range(len(a)):
+        if i > 0:
             txt += ', '
-        txt += str(getdigits(a, i))
+        txt += a[i] #no hay que usar funcion getdigits en python
     print(txt)
 
 def primo(a):
@@ -25,7 +25,7 @@ def ejercicio12(a,b):
         for i in ( str(a) + str(b) ):
             suma += int(i)
         print(suma)
-    if getdigits(dif, len(str(dif))) == 4:
+    if str(dif)[-1] == 4: # o getdigits(dif, len(str(dif))) == 4
         showdigits(dif)
     if dif < 10 and primo(dif):
         print(a*b)
