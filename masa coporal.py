@@ -4,4 +4,4 @@ altura = float( input('ingrese su altura en metros') )
 if unidad == 2:
     peso = peso * (1/2.20462262) ## lb a kg
 masa = peso / (altura**2)
-print(f'su masa es {masa}')
+print(f'su indice de masa corporal es {masa}')
