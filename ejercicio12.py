@@ -30,7 +30,7 @@ def ejercicio12(a,b):
             suma += int(i)
         print(suma)
     if str(dif)[-1] == '4': # o getdigits(dif, len(str(dif))) == 4
-        showdigits(dif) # print( str( [ str(i) for i in dif ] ).strip('[]') )
+        showdigits(dif) # o print( str( [ str(i) for i in dif ] ).strip('[]') )
     if dif < 10 and primo(dif):
         print(a*b)
 
