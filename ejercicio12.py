@@ -2,7 +2,7 @@ def getdigits(a, b): #no hay que usar funcion getdigits en python
     num = str(a)
     return int(num[b-1:b])
 
-def showdigits(a):
+def showdigits(a): #funcion que muestra los digitos de un numero separado por comas
     txt = ''
     a = str(a)
     for i in range(len(a)):
@@ -18,7 +18,7 @@ def primo(a):
             count += 1
     return count <= 2
 
-def showdigits2(a):
+def showdigits2(a): #funcion alternativa mas corta de showidigts()
     a = str(a)
     print( str( [ int(i) for i in a ] ).strip("[]") )
 
