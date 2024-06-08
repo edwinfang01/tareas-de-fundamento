@@ -18,6 +18,10 @@ def primo(a):
             count += 1
     return count <= 2
 
+def showdigits2(a):
+    a = str(a)
+    print( str( [ int(i) for i in a ] ).strip("[]") )
+
 def ejercicio12(a,b):
     dif = abs(a-b)
     if dif % 2 == 0:
@@ -26,8 +30,10 @@ def ejercicio12(a,b):
             suma += int(i)
         print(suma)
     if str(dif)[-1] == '4': # o getdigits(dif, len(str(dif))) == 4
-        showdigits(dif)
+        showdigits(dif) # print( str( [ str(i) for i in dif ] ).strip('[]') )
     if dif < 10 and primo(dif):
         print(a*b)
 
-ejercicio12(26, 0)
+ejercicio12(24, 0)
+
+showdigits2(24)
