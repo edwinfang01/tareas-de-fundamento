@@ -85,8 +85,18 @@ def ejercicios(a = None, b = None, uso = 'usar', *, ejercicio = 1): # escribir m
             else:
                 print(f'el promedio de los {a} primeros multiplos de 2 es menor que el de los {b} primeros multiplos de 5')
 
+        case 17:
+            while True:
+                lista.append( input('ingrese un numero') )
+                if input( 'desea salir? (0/salir) (cualquier otra tecla para continuar)' ).strip() == '0':
+                    break
+            lista = [ float(number) for number in lista if number[-1] == '5' ]
+            promedio = sum(lista) / len(lista)
+            lista = f'promedio de los numeros terminados en 5 = {promedio}'
+
         case 18:
-            lista = ejercicios(10)
+            lista = list( range(10, 0, -1) )
+            lista.sort()
 
         case 19:
             for i in range(1, 9 + 1):
@@ -101,4 +111,4 @@ def ejercicios(a = None, b = None, uso = 'usar', *, ejercicio = 1): # escribir m
         print(lista)
     return lista
 
-ejercicios(159, None , ejercicio=10, uso='mostrar')
+ejercicios(15, None , ejercicio=20 , uso='mostrar')
