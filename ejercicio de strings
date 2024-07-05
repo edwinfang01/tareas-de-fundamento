@@ -1,0 +1,11 @@
+stri = 'cualquier string'
+stri.upper() #retornar texto en mayuscula
+stri.lower() #retornar texto en minuscula
+print( stri[:2] ) # los dos primeros caracteres
+print( stri[-2:] ) #los dos ultimos caracteres
+print( stri.count('g', None, None) ) #cantidad de veces que se repite el ultimo caracter
+invertido = ''
+stri = list(stri) ; stri.reverse()
+for i in stri:
+    invertido += i
+print(invertido) #texto invertido
