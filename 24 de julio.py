@@ -15,10 +15,7 @@ def arearectan():
 def parimpar(n):
     par = None
     if type(n) == 'float' or type(n) == 'int':
-        n = str(n)
-        if n[-1] == '2' or n[-1] == '0':
-            par = True
-    return par
+        return n % 2 == 0
 
 def conversiontemp(a):
     return a*1.8 + 32
