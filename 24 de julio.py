@@ -35,7 +35,7 @@ def factorial(n):
     return result
 
 def contarvocales(a):
-    a = list(a)
+    a = list(a.lower())
     vocales = ['a', 'e', 'i', 'o', 'u']
     num = 0
     for i in vocales:
